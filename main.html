@@ -2,33 +2,33 @@
     <head>
         <title>CalculatorJS</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="calculator">
-                <div class="display"></div>
+                <input type="text" name="display" id="display" class="display"></input>
                 <div class="input-area">
-                    <button class="operation" data-action="add">+</button>
-                    <button class="operation" data-action="subtract">-</button>
-                    <button class="operation" data-action="multiply">X</button>
-                    <button class="operation" data-action="divide">/</button>
+
+                    <button class="operation" value="+" onclick="dis('+')">+</button>
+                    <button class="operation" value="-" onclick="dis('-')">-</button>
+                    <button class="operation" value="*" onclick="dis('*')">X</button>
+                    <button class="operation" value="/" onclick="dis('/')">/</button>
         
-                    <button class="input">7</button>
-                    <button class="input">8</button>
-                    <button class="input">9</button>
-                    <button class="input">4</button>
-                    <button class="input">5</button>
-                    <button class="input">6</button>
-                    <button class="input">1</button>
-                    <button class="input">2</button>
-                    <button class="input">3</button>
-                    <button class="input">0</button>
+                    <button class="input" value="7" onclick="dis('7')">7</button>
+                    <button class="input" value="8" onclick="dis('8')">8</button>
+                    <button class="input" value="9" onclick="dis('9')">9</button>
+                    <button class="input" value="4" onclick="dis('4')">4</button>
+                    <button class="input" value="5" onclick="dis('5')">5</button>
+                    <button class="input" value="6" onclick="dis('6')">6</button>
+                    <button class="input" value="1" onclick="dis('1')">1</button>
+                    <button class="input" value="2" onclick="dis('2')">2</button>
+                    <button class="input" value="3" onclick="dis('3')">3</button>
+                    <button class="input" value="0" onclick="dis('0')">0</button>
                     
-                    <button class="input" data-action="decimal">.</button>
-                    <button class="input" data-action="clear">AC</button>
+                    <button class="input" value="0" onclick="dis('.')">.</button>
+                    <button class="input" value="c" onclick="clr()">C</button>
         
-                    <button class="equal" data-action="calculate">=</button>
+                    <button class="equal" value="=" onclick="solve()">=</button>
                 </div>    
             </div>
         </div>
