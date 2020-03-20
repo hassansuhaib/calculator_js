@@ -1,6 +1,39 @@
 <html>
-    <head></head>
+    <head>
+        <title>CalculatorJS</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
     <body>
+        <div class="container">
+            <div class="calculator">
+                <div class="display"></div>
+                <div class="input-area">
+                    <button class="operation" data-action="add">+</button>
+                    <button class="operation" data-action="subtract">-</button>
+                    <button class="operation" data-action="multiply">X</button>
+                    <button class="operation" data-action="divide">/</button>
+        
+                    <button class="input">7</button>
+                    <button class="input">8</button>
+                    <button class="input">9</button>
+                    <button class="input">4</button>
+                    <button class="input">5</button>
+                    <button class="input">6</button>
+                    <button class="input">1</button>
+                    <button class="input">2</button>
+                    <button class="input">3</button>
+                    <button class="input">0</button>
+                    
+                    <button class="input" data-action="decimal">.</button>
+                    <button class="input" data-action="clear">AC</button>
+        
+                    <button class="equal" data-action="calculate">=</button>
+                </div>    
+            </div>
+        </div>
+        
         
     </body>
+    <script src="brains.js"></script>
 </html>
